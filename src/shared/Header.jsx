@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import { MdOutlineClose } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { logo } from "../assets/images";
+import SocialLInks from "../component/SocialLInks";
 const navigation = [
   { title: "Buy", link: "buy",},
   { title: "Sell", link: "sell", },
@@ -19,7 +20,7 @@ const Header = () => {
     }
   };
   return (
-    <div className="sticky top-0 z-50 ">
+    <div className="">
   
    <div className="h-20   px-4 lg:px-0 ">
    <div className="max-w-[1340px] mx-auto flex items-center h-full justify-between">
@@ -107,7 +108,7 @@ const Header = () => {
                   ))}
                 </ul>
                
-                {/* <SocialLInks className="flex-row items-center gap-5" /> */}
+                <SocialLInks className="flex-row items-center gap-5" />
                 <motion.a
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
