@@ -1,3 +1,4 @@
+import { house_1 } from "../../assets/images";
 import Container from "../Container";
 import CustomButton from "../CustomButton";
 import SectionTitle from "../SectionTitle";
@@ -6,9 +7,13 @@ const PropertyBuying = () => {
     return (
         <Container>
             {/* Main div  */}
-            <div className="flex justify-between items-center gap-4 my-10">
+            <div className="flex flex-col lg:flex-row justify-between items-center gap-4 my-10">
                 {/* images  */}
                 <div>
+                   <div className="relative">
+                   <img className=" w-[458px] rounded-md" src={house_1} alt="" />
+                   <img className="absolute -bottom-14 lg:-right-28 w-[300px] rounded-md" src={house_1} alt="" />
+                   </div>
 
                 </div>
                 {/* text section  */}

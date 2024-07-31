@@ -1,45 +1,34 @@
 import React from "react";
 import {
   SlSocialFacebook,
-  SlSocialInstagram,
   SlSocialLinkedin,
-  SlSocialYoutube,
 } from "react-icons/sl";
 import { TbBrandGithub } from "react-icons/tb";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
+import { FaTwitter } from "react-icons/fa";
 
 const socialAccounts = [
   {
-    title: "github",
-    link: "https://github.com/Mehebul02",
-    icon: <TbBrandGithub />,
+    title: "twitter",
+    link: "",
+    icon: <FaTwitter />,
     delay: 0.8,
   },
-  // {
-  //   title: "youtube",
-  //   link: "https://www.youtube.com/channel/UChkOsij0dhgft0GhHRauOAA",
-  //   icon: <SlSocialYoutube />,
-  //   delay: 0.85,
-  // },
+  
   {
     title: "linkedin",
-    link: "https://www.linkedin.com/in/noor-mohammad-ab2245193/",
+    link: "",
     icon: <SlSocialLinkedin />,
     delay: 0.9,
   },
   {
     title: "facebook",
-    link: "https://www.facebook.com/Noorlalu143/",
+    link: "",
     icon: <SlSocialFacebook />,
     delay: 0.95,
   },
-  {
-    title: "instagram",
-    link: "https://www.instagram.com/simplenoor143/",
-    icon: <SlSocialInstagram />,
-    delay: 1,
-  },
+  
 ];
 const SocialLInks = ({ className }) => {
   return (
