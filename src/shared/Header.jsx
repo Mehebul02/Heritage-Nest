@@ -1,74 +1,130 @@
 
-// import  logo  from "../assets/images/logo.png";
-
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { MdOutlineClose } from "react-icons/md";
 import { Link } from "react-router-dom";
-// import SocialLInks from "./SocialLInks";
-// import Container from "./Container";
+import { logo } from "../assets/images";
 const navigation = [
-  { title: "Home", link: "home", value: "" },
-  { title: "About", link: "about", value: "01", delay: 0.1 },
-  { title: "Skills", link: "skills", value: "02", delay: 0.2 },
-  { title: "Project", link: "project", value: "03", delay: 0.3 },
-  { title: "Contact", link: "contact", value: "04", delay: 0.4 },
+  { title: "Buy", link: "buy",},
+  { title: "Sell", link: "sell", },
+  { title: "Services", link: "services",  }
 ];
 const Header = () => {
- 
+  const [show, setShow] = useState(false);
+  const ref = useRef();
+
+  const handleClick = (e) => {
+    if (e.target.contains(ref.current)) {
+      setShow(false);
+    }
+  };
   return (
-    <div className="navbar bg-base-100">
-    <div className="navbar-start">
-      <div className="dropdown">
-        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h8m-8 6h16" />
-          </svg>
+    <div className="sticky top-0 z-50 ">
+  
+   <div className="h-20   px-4 lg:px-0 ">
+   <div className="max-w-[1340px] mx-auto flex items-center h-full justify-between">
+       {/* navbar  */}
+   <div className="hidden md:inline-flex items-center gap-7">
+          <div className="flex text-[14px] gap-7">
+            {navigation?.map((item) => (
+              <Link
+                key={item?.title}
+                to={item?.link}
+                smooth={true}
+                duration={500}
+                offset={-80}
+                className="relative group font-medium  cursor-pointer duration-300">
+                <motion.p
+                  initial={{ y: -10, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.1 }}>
+                  
+                  <span className="text-[18px] tracking-wide">{item?.title}</span>
+                </motion.p>
+              </Link>
+            ))}
+          </div>
+        
         </div>
-        <ul
-          tabIndex={0}
-          className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-          <li><a>Item 1</a></li>
-          <li>
-            <a>Parent</a>
-            <ul className="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </li>
-          <li><a>Item 3</a></li>
-        </ul>
+          {/* logo */}
+          <div>
+      <img src={logo} alt="logo" className="w-14 opacity-75 hover:opacity-100 duration-200 cursor-pointer"/> 
+       </div>
+      {/* login */}
+     <div>
+        <button className="text-[14px] text-primaryColor bg-primaryColor/20 px-4 py-2 rounded-[14px] font-bodyFont ">Sing in</button>
+    </div>
+               
+        <div
+          onClick={() => setShow(true)}
+          className="md:hidden w-6 h-5 flex flex-col justify-between items-center cursor-pointer group overflow-hidden"
+        >
+          <span className="w-full h-[2px] bg-designColor inline-flex transform group-hover:translate-x-2 transition-all duration-300" />
+          <span className="w-full h-[2px] bg-designColor inline-flex transform translate-x-3 group-hover:translate-x-0 transition-all duration-300" />
+          <span className="w-full h-[2px] bg-designColor inline-flex transform translate-x-1 group-hover:translate-x-2 transition-all duration-300" />
+        </div>
+        {show && (
+          <div
+            ref={(node) => (ref.current = node)}
+            onClick={handleClick}
+            className="absolute md:hidden top-0 right-0 w-full h-screen bg-black/50 flex flex-col items-end z-50"
+          >
+            <motion.div
+              initial={{ x: 20, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.1 }}
+              className="w-[80%] h-full overflow-y-scroll bg-textBg flex flex-col items-center py-10 relative scrollBarHide"
+            >
+              <MdOutlineClose
+                onClick={() => setShow(false)}
+                className="text-3xl text-designColor hover:text-red-500 absolute top-4 right-4 duration-200"
+              />
+              <div className="flex flex-col items-center gap-7 mt-10">
+                <ul className="flex flex-col text-base gap-5">
+                  {navigation?.map((item) => (
+                    <Link
+                      key={item?.title}
+                      to={item?.link}
+                      smooth={true}
+                      duration={500}
+                      offset={-80}
+                      className="font-medium text-darkText hover:text-designColor cursor-pointer duration-300"
+                    >
+                      <motion.li
+                        onClick={() => setShow(false)}
+                        initial={{ y: -10, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 0.1, delay: item?.delay }}
+                      >
+                        <span className="text-designColor">
+                          {item?.value} {item?.value && "."}{" "}
+                        </span>
+                        <span className="tracking-wide uppercase">
+                          {item?.title}
+                        </span>
+                      </motion.li>
+                    </Link>
+                  ))}
+                </ul>
+               
+                {/* <SocialLInks className="flex-row items-center gap-5" /> */}
+                <motion.a
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1.2, ease: "easeIn" }}
+                  className="text-sm w-72 tracking-widest text-designColor text-center mt-4"
+                  href="mailto:noor.jsdivs@gmail.com"
+                >
+                  
+                </motion.a>
+              </div>
+            </motion.div>
+          </div>
+        )}
       </div>
-      <a className="btn btn-ghost text-xl">daisyUI</a>
-    </div>
-    <div className="navbar-center hidden lg:flex">
-      <ul className="menu menu-horizontal px-1">
-        <li><a>Item 1</a></li>
-        <li>
-          <details>
-            <summary>Parent</summary>
-            <ul className="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </details>
-        </li>
-        <li><a>Item 3</a></li>
-      </ul>
-    </div>
-    <div className="navbar-end">
-      <a className="btn">Button</a>
-    </div>
-  </div>
+ 
+   </div>
+     </div>
     
   );
 };
