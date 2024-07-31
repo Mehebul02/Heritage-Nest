@@ -49,7 +49,7 @@ const Header = () => {
         </div>
           {/* logo */}
           <div>
-      <img src={logo} alt="logo" className="w-14 opacity-75 hover:opacity-100 duration-200 cursor-pointer"/> 
+     <Link to='/'> <img src={logo} alt="logo" className="w-14 opacity-75 hover:opacity-100 duration-200 cursor-pointer"/></Link> 
        </div>
       {/* login */}
      <div>
