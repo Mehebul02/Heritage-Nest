@@ -1,9 +1,10 @@
 import Home from "../pages/Home";
+import Header from "../shared/Header";
 
 const Root = () => {
     return (
         <div>
-            <Home/>
+            <Header/>
         </div>
     );
 };
