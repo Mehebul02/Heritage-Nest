@@ -1,6 +1,7 @@
 import { FiSearch } from "react-icons/fi";
 import { banner } from "../assets/images";
 
+
 const Banner = () => {
   return (
     <div>
