@@ -22,8 +22,8 @@ const Header = () => {
   return (
     <div className="">
   
-   <div className="h-20   px-4 lg:px-0 ">
-   <div className="max-w-[1340px] mx-auto flex items-center h-full justify-between">
+   <div className="h-20 bg-[#ECF5FF]  px-4 lg:px-0 ">
+   <div className="max-w-[1340px]  mx-auto flex items-center h-full justify-between">
        {/* navbar  */}
    <div className="hidden md:inline-flex items-center gap-7">
           <div className="flex text-[14px] gap-7">

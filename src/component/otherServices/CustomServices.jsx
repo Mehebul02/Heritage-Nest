@@ -1,9 +1,9 @@
 
 const CustomServices = ({Icon,title,description}) => {
     return (
-        <div className="flex  gap-5 bg-bgColor p-6">
+        <div className="flex  gap-5 bg-bgColor p-6 rounded-lg">
         {/* icon  */}
-        <div className="">
+        <div>
            <div className="p-2 rounded-md bg-designColor"> <Icon className=" text-2xl text-white "/></div>
 
         </div>
