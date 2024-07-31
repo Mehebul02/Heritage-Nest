@@ -114,7 +114,7 @@ const Header = () => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1.2, ease: "easeIn" }}
                   className="text-sm w-72 tracking-widest text-designColor text-center mt-4"
-                  href="mailto:noor.jsdivs@gmail.com"
+                  href="#"
                 >
                   
                 </motion.a>
