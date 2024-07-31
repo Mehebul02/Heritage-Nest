@@ -1,10 +1,14 @@
 import Banner from "../component/Banner";
+import Services from "../component/otherServices/Services";
+import PropertyBuying from "../component/Propertybuying/PropertyBuying";
 
 const Home = () => {
     return (
-        <div>
+        <main>
            <Banner/>
-        </div>
+           <PropertyBuying/>
+           <Services/>
+        </main>
     );
 };
 

@@ -11,6 +11,7 @@ export default {
         designColor:'#EE6611',
         lightText:'#FFFFFF',
         darkText:'#111827',
+        bgColor:'#ECF5FF'
       },
       fontFamily:{
         bodyFont:["inter", "sans-serif"]
