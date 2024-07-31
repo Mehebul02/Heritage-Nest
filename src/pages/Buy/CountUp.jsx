@@ -5,7 +5,7 @@ import CustomCountSecont from "../../component/CustomCountSecont";
 
 const CountUp = () => {
     return (
-        <Container className="mt-52">
+        <Container className="my-48">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
             {/* 1st count up  */}
             <CustomCountUp number='2' title='New Flat Listed' Icon={MdOutlineFileDownload}/>
