@@ -4,12 +4,13 @@ import CustomBuyNav from "./CustomBuyNav";
 import { FaSearch } from "react-icons/fa";
 import { CiDollar, CiLocationOn } from "react-icons/ci";
 import { RiHome3Line } from "react-icons/ri";
+import { FiSearch } from "react-icons/fi";
 const BuyBanner = () => {
   return (
     <div>
       <div className="relative">
         <img className="w-full h-[309px]" src={banner} alt="" />
-        <div className="absolute  w-[984px] h-[300px] mx-auto right-72 -bottom-32 bg-lightText px-10 py-4 rounded-lg">
+        <div className="absolute  lg:w-[984px] lg:h-[300px] mx-auto right-72 -bottom-32 bg-lightText px-10 py-4 rounded-lg">
           {/* nav item  */}
           <nav className="flex gap-9">
             <CustomBuyNav path={"/buy"} title="Buy" />
@@ -40,8 +41,11 @@ const BuyBanner = () => {
 
               <select className="select select-bordered w-full  bg-bgColor">
                 <option disabled selected></option>
-                <option>Han Solo</option>
-                <option>Greedo</option>
+                <option>Meadowshire Park, Greenfield, USA</option>
+                <option>Meadowshire Park, Greenfield, USA</option>
+                <option>Meadowshire Park, Greenfield, USA</option>
+                <option>Meadowshire Park, Greenfield, USA</option>
+                
               </select>
             </div>
             {/* property type  */}
@@ -53,8 +57,15 @@ const BuyBanner = () => {
 
               <select className="select select-bordered w-full  bg-bgColor">
                 <option disabled selected></option>
-                <option>Han Solo</option>
-                <option>Greedo</option>
+                <option>Single-Family Home</option>
+                <option>Condominium</option>
+                <option>Townhouse</option>
+                <option>Apartment</option>
+                <option>Commercial Building</option>
+                <option>Vacant Land</option>
+                <option>Duplex</option>
+                <option>Retail Space</option>
+               
               </select>
             </div>
             {/* Budget  */}
@@ -63,13 +74,18 @@ const BuyBanner = () => {
                 <CiDollar className="text-xl text-designColor" /> Budget
               </span>
 
-              <select className="select select-bordered w-full  bg-bgColor">
-                <option disabled selected></option>
-                <option>Han Solo</option>
-                <option>Greedo</option>
-              </select>
+              <input
+                type="text"
+               
+                className="input input-bordered w-full px-4 pl-10 bg-bgColor"
+              />
+              
             </div>
           </div>
+          {/* button  */}
+          <button className=" w-full text-xl text-white  font-semibold bg-primaryColor px-4 py-2 rounded-md font-bodyFont flex items-center justify-center gap-4">
+                <FiSearch /> Find Property
+              </button>
         </div>
       </div>
     </div>
