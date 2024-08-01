@@ -34,14 +34,15 @@ const Header = () => {
                 smooth={true}
                 duration={500}
                 offset={-80}
-                className="relative group font-medium  cursor-pointer duration-300">
+                className="relative group font-medium  cursor-pointer duration-300 ">
                 <motion.p
                   initial={{ y: -10, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.1 }}>
                   
-                  <span className="text-[18px] tracking-wide">{item?.title}</span>
+                  <span className="text-[18px] text-darkText  tracking-wide">{item?.title}</span>
                 </motion.p>
+                <span className="bg-primaryColor h-[2px]  absolute group-hover:w-full translate-all group-hover:duration-300  "></span>
               </Link>
             ))}
           </div>
