@@ -5,8 +5,10 @@ import {
   detailsImg2,
   detailsImg3,
   detailsImg4,
+  map,
   viewMore,
 } from "../../assets/images";
+import Map from "./Map";
 
 const PropertyDetails = () => {
   return (
@@ -52,52 +54,57 @@ const PropertyDetails = () => {
           </div>
         </div>
         {/* text section  */}
-        <div className="w-[384px] bg-[#ECF5FF] p-4 rounded-md space-y-2">
-          <p className="text-[#6B7280] font-montserrat">property value</p>
-          <h1 className="text-[24px] text-darkText font-bodyFont font-bold">
-            $ 300k - $ 310k
-          </h1>
-          <p className="text-[#6B7280] font-montserrat">
-            Your bid can not be than 10% of the <br /> property Minimum value.
-          </p>
-          {/* Min  */}
-          <label className="form-control w-full max-w-xs">
-            <div className="label">
-              <span className="label-text font-bodyFont">Min</span>
+        <div>
+          <div className="w-[384px] bg-[#ECF5FF] h-[492px] p-4 rounded-md space-y-2">
+            <p className="text-[#6B7280] font-montserrat">property value</p>
+            <h1 className="text-[24px] text-darkText font-bodyFont font-bold">
+              $ 300k - $ 310k
+            </h1>
+            <p className="text-[#6B7280] font-montserrat">
+              Your bid can not be than 10% of the <br /> property Minimum value.
+            </p>
+            {/* Min  */}
+            <label className="form-control w-full max-w-xs">
+              <div className="label">
+                <span className="label-text font-bodyFont">Min</span>
+              </div>
+              <input
+                type="text"
+                placeholder=""
+                className="input input-bordered w-full max-w-xs"
+              />
+            </label>
+            {/* Max */}
+            <label className="form-control w-full max-w-xs">
+              <div className="label">
+                <span className="label-text font-bodyFont">Mex</span>
+              </div>
+              <input
+                type="text"
+                placeholder=""
+                className="input input-bordered w-full max-w-xs"
+              />
+            </label>
+            <br />
+            <div className="flex justify-between items-center overflow-auto">
+              <div className="">
+                <div className="w-6 h-6 bg-designColor rounded-full"></div>
+                <h1 className="text-[14px] font-bodyFont">$ 280k</h1>
+              </div>
+              <div className="">
+                <div className="w-6 h-6 bg-designColor rounded-full"></div>
+                <h1 className="text-[14px] font-bodyFont">$ 305k</h1>
+              </div>
             </div>
-            <input
-              type="text"
-              placeholder=""
-              className="input input-bordered w-full max-w-xs"
-            />
-          </label>
-          {/* Max */}
-          <label className="form-control w-full max-w-xs">
-            <div className="label">
-              <span className="label-text font-bodyFont">Mex</span>
+            {/* button  */}
+            <div className="text-center flex justify-center">
+              <button className="bg-primaryColor px-4 py-2 text-white font-bodyFont font-bold rounded-md">
+                Find Property
+              </button>
             </div>
-            <input
-              type="text"
-              placeholder=""
-              className="input input-bordered w-full max-w-xs"
-            />
-          </label><br />
-          <div className="flex justify-between items-center overflow-auto">
-          <div className="">
-            <div className="w-6 h-6 bg-designColor rounded-full" >
-            </div>
-            <h1 className="text-[14px] font-bodyFont">$ 280k</h1>
           </div>
-          <div className="">
-            <div className="w-6 h-6 bg-designColor rounded-full" >
-            </div>
-            <h1 className="text-[14px] font-bodyFont">$ 305k</h1>
-          </div>
-          </div>
-          {/* button  */}
-         <div className="text-center flex justify-center">
-         <button className="bg-primaryColor px-4 py-2 text-white font-bodyFont font-bold rounded-md" >Find Property</button>
-         </div>
+            {/* map component  */}
+          <Map />
         </div>
       </div>
     </Container>

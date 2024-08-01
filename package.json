@@ -12,6 +12,7 @@
   "dependencies": {
     "flowbite-react": "^0.10.1",
     "framer-motion": "^11.3.19",
+    "google-map-react": "^2.2.1",
     "localforage": "^1.10.0",
     "marge": "^1.0.1",
     "match-sorter": "^6.3.4",
