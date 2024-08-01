@@ -61,7 +61,7 @@ const PropertyDetails = () => {
         </div>
         {/* text section  */}
         <div>
-          <div className="w-[384px] bg-[#ECF5FF] h-[492px] p-4 rounded-md space-y-2">
+          <div className="lg:w-[384px] bg-[#ECF5FF] h-[492px] p-4 rounded-md space-y-2">
             <p className="text-[#6B7280] font-montserrat">property value</p>
             <h1 className="text-[24px] text-darkText font-bodyFont font-bold">
               $ 300k - $ 310k

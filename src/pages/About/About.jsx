@@ -1,7 +1,9 @@
-import CountUp from "../Buy/CountUp";
+import CountUp from "../Buy/CountUp"
+import Testimonial from "../Buy/Testimonial";
 import AboutCountUp from "./AboutCountUp";
 import AboutFrame from "./AboutFrame";
 import Banner from "./Banner";
+import BookConsultation from "./BookConsultation ";
 import OurTeam from "./OurTeam";
 
 const About = () => {
@@ -14,6 +16,10 @@ const About = () => {
            <AboutFrame/>
            {/* our team  */}
            <OurTeam/>
+           {/* Book Consultation Now */}
+           <BookConsultation/>
+           {/* testimonials  */}
+           <Testimonial/>
         </div>
     );
 };

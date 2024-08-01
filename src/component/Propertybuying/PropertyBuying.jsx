@@ -6,6 +6,10 @@ import services_house_1 from '../../assets/images/house/services-1.avif'
 import services_house_2 from '../../assets/images/house/services-2.png'
 import { TiMediaPlayReverse } from "react-icons/ti";
 import CustomProperty from "./CustomProperty";
+import image1 from '../../assets/images/house/image1.avif'
+import image2 from '../../assets/images/house/image2.avif'
+import image3 from '../../assets/images/house/image3.jpg'
+import { detailsImg3 } from "../../assets/images";
 const PropertyBuying = () => {
     return (
         <Container>
@@ -13,7 +17,20 @@ const PropertyBuying = () => {
             {/* custom 1st section  */}
            <CustomProperty image_1={services_house_1} image_2={services_house_2} Icon={TiMediaPlayReverse} title='Efficient and Transparent Home Buying Solutions' description='It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'/>
              {/* 2nd section */}
-             <div className=" flex flex-col-reverse lg:flex-row  gap-7 space-x-44">
+             <div className=" flex flex-col lg:flex-row-reverse justify-evenly  gap-7  ">
+                 {/* images  */}
+                 <div>
+                   <div className="relative">
+                   
+                   <img className="w-[300px] lg:w-[400px]  rounded-md" src={image1} alt="house" />
+                   
+                  <div className="relative">
+                  <img className="absolute -bottom-14 lg:-right-14 lg:-top-80 lg:w-[300px] rounded-md" src={detailsImg3} alt="house" />
+                 <div className="absolute right-28 lg:right-56 -top-12 lg:-top-72 "> <TiMediaPlayReverse className="  text-4xl text-white rounded-full bg-primaryColor " /></div>
+                  </div>
+                   </div>
+
+                </div>
                 {/* text section  */}
                 <div className="max-w-[552px] space-y-10">
                     <SectionTitle title='Property buying'/>
@@ -21,22 +38,12 @@ const PropertyBuying = () => {
                 <p className="font-bodyFont">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
               <CustomButton/>
                 </div>
-                {/* images  */}
-                <div>
-                   <div className="relative">
-                   <img className=" lg:w-[458px] rounded-md" src={services_house_1} alt="house" />
-                  <div className="relative">
-                  <img className="absolute -bottom-14 lg:-right-28 w-[300px] rounded-md" src={services_house_2} alt="house" />
-                 <div className="absolute   right-28 lg:-right-6 -top-12 lg:-top-40 "> <TiMediaPlayReverse className="  text-4xl text-white rounded-full bg-primaryColor " /></div>
-                  </div>
-                   </div>
-
-                </div>
+               
                 
 
             </div>
             {/* 3rd custom section  */}
-            <CustomProperty image_1={services_house_1} image_2={services_house_2} Icon={TiMediaPlayReverse} title='Efficient and Transparent Home Buying Solutions' description='It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'/>
+            <CustomProperty image_1={image2} image_2={image3} Icon={TiMediaPlayReverse} title='Efficient and Transparent Home Buying Solutions' description='It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'/>
            </div>
           
         </Container>

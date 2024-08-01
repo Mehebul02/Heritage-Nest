@@ -13,6 +13,7 @@ import aboutFrame1 from '../images/aboutFrame.jpg'
 import member1 from '../images/membar1.png'
 import member2 from '../images/membar2.png'
 import member3 from '../images/membar3.png'
+import bookNow from '../images/bookNow.png'
 
 
-export {logo,banner,cardImage1,detailsImg1,detailsImg2,detailsImg3,detailsImg4,viewMore,map,aboutBanner,aboutFrame,aboutFrame1,member1,member2,member3}
+export {logo,banner,cardImage1,detailsImg1,detailsImg2,detailsImg3,detailsImg4,viewMore,map,aboutBanner,aboutFrame,aboutFrame1,member1,member2,member3,bookNow}
