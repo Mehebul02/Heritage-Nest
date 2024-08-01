@@ -9,6 +9,8 @@ import { RiUmbrellaLine } from "react-icons/ri";
 import { GrBusinessService, GrVmMaintenance } from "react-icons/gr";
 import { LiaIntercom } from "react-icons/lia";
 import { PiPipeDuotone, PiTelevisionSimpleBold } from "react-icons/pi";
+import Services from "../../component/otherServices/Services";
+
 
 const Amenities = () => {
     return (
@@ -47,6 +49,9 @@ const Amenities = () => {
                 </div>
             </div>
            </div>
+           {/* services  */}
+           <Services/>
+          
         </Container>
     );
 };

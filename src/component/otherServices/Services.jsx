@@ -1,6 +1,7 @@
 import { FaHome } from "react-icons/fa";
 import Container from "../Container";
 import CustomServices from "./CustomServices";
+import ListedProperty from "../../pages/Buy/ListedProperty";
 
 const Services = () => {
     return (
@@ -13,8 +14,8 @@ const Services = () => {
       <CustomServices Icon={FaHome} title='Secure Online Transactions' description='Ensure secure transactions and e-sign documents seamlessly online.'/>
        </div>
         
+<ListedProperty/>
         </Container>
-
     );
 };
 

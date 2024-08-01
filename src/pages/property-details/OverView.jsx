@@ -16,7 +16,7 @@ const OverView = () => {
            </div>
            </div>
            {/* room info  */}
-           <div className="flex overflow-auto justify-between" >
+           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-16" >
             {/* 1st  */}
             <div className="">
                 <p className="text-[16px] text-[#5C5C5C] font-bodyFont">Carpet Area</p>
@@ -26,7 +26,7 @@ const OverView = () => {
             {/* 1st  */}
             <div className="">
                 <p className="text-[16px] text-[#5C5C5C] font-bodyFont">Floor</p>
-                <h1 className="text-xl text-darkText font-montserrat font-semibold">Second (Out of 6th floor)</h1>
+                <h1 className="lg:text-xl text-darkText font-montserrat font-semibold">Second (Out of 6th floor)</h1>
                 
             </div>
             {/* 1st  */}
@@ -43,7 +43,7 @@ const OverView = () => {
           
             </div>
             {/* room info  */}
-            <div className="flex overflow-auto justify-between space-y-2 my-6">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-16 my-6">
                {/* 1st   */}
                 <div className="">
                 <p className="text-[16px] text-[#5C5C5C] font-bodyFont">Facing</p>
