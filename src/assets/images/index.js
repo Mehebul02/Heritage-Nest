@@ -7,6 +7,8 @@ import detailsImg3 from '../images/Rectangle 21-1.png'
 import detailsImg4 from '../images/image_by_url.jpeg'
 import viewMore from '../images/View more (1).png'
 import map from '../images/map.png'
+import aboutBanner from '../images/aboutBanner.png'
+import aboutFrame from '../images/aboutFrame.png'
 
 
-export {logo,banner,cardImage1,detailsImg1,detailsImg2,detailsImg3,detailsImg4,viewMore,map}
+export {logo,banner,cardImage1,detailsImg1,detailsImg2,detailsImg3,detailsImg4,viewMore,map,aboutBanner,aboutFrame}

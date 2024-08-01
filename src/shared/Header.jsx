@@ -8,7 +8,8 @@ import SocialLInks from "../component/SocialLInks";
 const navigation = [
   { title: "Buyer", link: "buy",},
   { title: "Sell", link: "#", },
-  { title: "Services", link: "#",  }
+  { title: "Services", link: "#",  },
+  { title: "About", link: "about",  }
 ];
 const Header = () => {
   const [show, setShow] = useState(false);
