@@ -81,8 +81,8 @@ const Header = () => {
                 onClick={() => setShow(false)}
                 className="text-3xl text-designColor hover:text-red-500 absolute top-4 right-4 duration-200"
               />
-              <div className="flex flex-col items-center gap-7 mt-10">
-                <ul className="flex flex-col text-base gap-5">
+              <div className="flex flex-col  items-center gap-7 mt-10 bg-primaryColor rounded-md">
+                <ul className="flex flex-col  text-base gap-5">
                   {navigation?.map((item) => (
                     <Link
                       key={item?.title}
@@ -90,7 +90,7 @@ const Header = () => {
                       smooth={true}
                       duration={500}
                       offset={-80}
-                      className="font-medium text-darkText hover:text-designColor cursor-pointer duration-300"
+                      className="font-medium text-white hover:text-designColor cursor-pointer duration-300"
                     >
                       <motion.li
                         onClick={() => setShow(false)}

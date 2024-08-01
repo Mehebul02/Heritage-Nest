@@ -68,6 +68,7 @@ const Footer = () => {
        
        
       </footer>
+      <div className="border"></div>
       <footer className="footer bg-bgColor  items-center p-10">
   <aside className="grid-flow-col items-center">
     <p> © {new Date().getFullYear()}  Heritage- Nest . All rights reserved.</p>

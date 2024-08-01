@@ -9,7 +9,7 @@ const CustomProperty = ({image_1,image_2,Icon,title,description}) => {
            <div className="relative">
            <img className=" w-[458px] rounded-md" src={image_1} alt="house" />
           <div className="relative">
-          <img className="absolute -bottom-14 lg:-right-28 w-[300px] rounded-md" src={image_2} alt="house" />
+          <img className="absolute -bottom-14 lg:-right-28 w-[400px] rounded-md" src={image_2} alt="house" />
          <div className="absolute   right-28 lg:-right-6 -top-12 lg:-top-40 "> <Icon className="  text-4xl text-white rounded-full bg-primaryColor " /></div>
           </div>
            </div>

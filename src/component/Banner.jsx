@@ -1,5 +1,6 @@
 import { FiSearch } from "react-icons/fi";
 import { banner } from "../assets/images";
+import { Link } from "react-router-dom";
 
 
 const Banner = () => {
@@ -22,10 +23,12 @@ const Banner = () => {
               properties.
             </p>
             <div className="mx-auto inline-block">
+              <Link to='/buy'>
               <button className="text-xl  bg-primaryColor px-4 py-2 rounded-md font-bodyFont flex items-center justify-center gap-4">
-                {" "}
+                
                 <FiSearch /> Get Started
               </button>
+              </Link>
             </div>
           </div>
         </div>

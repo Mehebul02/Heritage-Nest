@@ -2,8 +2,8 @@
 import Container from "../Container";
 import CustomButton from "../CustomButton";
 import SectionTitle from "../SectionTitle";
-import services_house_1 from '../../assets/images/house/services_1.jpg'
-import services_house_2 from '../../assets/images/house/services_house_2.jpg'
+import services_house_1 from '../../assets/images/house/services-1.avif'
+import services_house_2 from '../../assets/images/house/services-2.png'
 import { TiMediaPlayReverse } from "react-icons/ti";
 import CustomProperty from "./CustomProperty";
 const PropertyBuying = () => {
