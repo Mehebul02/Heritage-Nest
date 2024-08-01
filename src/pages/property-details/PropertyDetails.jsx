@@ -9,6 +9,7 @@ import {
   viewMore,
 } from "../../assets/images";
 import Map from "./Map";
+import OverView from "./OverView";
 
 const PropertyDetails = () => {
   return (
@@ -51,6 +52,10 @@ const PropertyDetails = () => {
               />
               <img className="absolute top-16 left-14" src={viewMore} alt="" />
             </div>
+          </div>
+          {/* overview  */}
+          <div>
+            <OverView />
           </div>
         </div>
         {/* text section  */}
@@ -103,7 +108,7 @@ const PropertyDetails = () => {
               </button>
             </div>
           </div>
-            {/* map component  */}
+          {/* map component  */}
           <Map />
         </div>
       </div>
