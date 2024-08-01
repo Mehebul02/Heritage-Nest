@@ -12,7 +12,7 @@ const Testimonial = () => {
             setTestimonials(data)
         })
     },[])
-    console.log(testimonials);
+  
   return (
     <Container>
       <div className="text-center mt-16 space-y-4 ">
@@ -35,7 +35,7 @@ const Testimonial = () => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
+        // navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
@@ -43,7 +43,7 @@ const Testimonial = () => {
           {
             testimonials?.map(testimonial =>(
                 <SwiperSlide key={testimonial.id}>
-                <div  className="max-w-[528px] mx-auto flex flex-col justify-center  p-6 shadow-md rounded-xl sm:px-12 bg-bgColor dark:bg-gray-50 dark:text-gray-800 my-10 space-y-4">
+                <div  className="max-w-[528px]  flex flex-col justify-center  p-6 shadow-md rounded-xl sm:px-12 bg-bgColor dark:bg-gray-50 dark:text-gray-800 my-10 space-y-4">
             {/* rating  */}
             <div className="rating rating-md space-x-6 mx-auto">
               <input
