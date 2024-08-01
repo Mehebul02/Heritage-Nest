@@ -1,11 +1,12 @@
 import { FaHome } from "react-icons/fa";
 import Container from "../Container";
 import CustomServices from "./CustomServices";
-import ListedProperty from "../../pages/Buy/ListedProperty";
+
 
 const Services = () => {
     return (
         <Container >
+            <div id='services' >
             <h1 className="text-3xl lg:text-[40px] text-center text-darkText font-bodyFont font-semibold lg:mt-32">Other Services</h1>
       {/* main div  */}
        <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 my-10">
@@ -14,7 +15,8 @@ const Services = () => {
       <CustomServices Icon={FaHome} title='Secure Online Transactions' description='Ensure secure transactions and e-sign documents seamlessly online.'/>
        </div>
         
-<ListedProperty/>
+
+            </div>
         </Container>
     );
 };

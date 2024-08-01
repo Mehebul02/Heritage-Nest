@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 import { logo } from "../assets/images";
 import SocialLInks from "../component/SocialLInks";
 const navigation = [
-  { title: "Buy", link: "buy",},
-  { title: "Sell", link: "sell", },
-  { title: "Services", link: "services",  }
+  { title: "Buyer", link: "buy",},
+  { title: "Sell", link: "#", },
+  { title: "Services", link: "#",  }
 ];
 const Header = () => {
   const [show, setShow] = useState(false);

@@ -11,6 +11,8 @@ import { LiaIntercom } from "react-icons/lia";
 import { PiPipeDuotone, PiTelevisionSimpleBold } from "react-icons/pi";
 import Services from "../../component/otherServices/Services";
 
+import NearbyProperties from "./NearbyProperties";
+
 
 const Amenities = () => {
     return (
@@ -51,7 +53,9 @@ const Amenities = () => {
            </div>
            {/* services  */}
            <Services/>
+         
           
+           <NearbyProperties/>
         </Container>
     );
 };
