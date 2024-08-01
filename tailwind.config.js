@@ -15,7 +15,8 @@ export default {
         bgColor:'#ECF5FF' 
       },
       fontFamily:{
-        bodyFont:["inter", "sans-serif"]
+        bodyFont:["inter", "sans-serif"],
+        montserrat:['"Montserrat", sans-serif"'],
       }
     },
   },
