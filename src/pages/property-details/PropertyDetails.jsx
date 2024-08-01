@@ -10,6 +10,7 @@ import {
 } from "../../assets/images";
 import Map from "./Map";
 import OverView from "./OverView";
+import Amenities from "./Amenities";
 
 const PropertyDetails = () => {
   return (
@@ -112,6 +113,9 @@ const PropertyDetails = () => {
           <Map />
         </div>
       </div>
+
+      {/* Amenities */}
+      <Amenities/>
     </Container>
   );
 };
