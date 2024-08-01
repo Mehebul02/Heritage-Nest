@@ -2,6 +2,7 @@ import BuyBanner from "./BuyBanner";
 import CountUp from "./CountUp";
 import ListedProperty from "./ListedProperty";
 import PopularProperties from "./PopularProperties";
+import PostProperty from "./PostProperty";
 import Testimonial from "./Testimonial";
 
 const Buy = () => {
@@ -17,6 +18,8 @@ const Buy = () => {
             <ListedProperty/>
             {/* Testimonial  */}
             <Testimonial/>
+            {/* post property  */}
+            <PostProperty/>
         </div>
     );
 };
