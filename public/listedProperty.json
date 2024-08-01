@@ -1,0 +1,34 @@
+[
+    {
+        "_id": "03",
+        "type": "Apartment",
+        "read": "Ready to Move",
+        "title": "SunnySlope Suites",
+        "location": "Meadowshire Park, Greenfield, USA",
+        "price": "250000",
+        "img": "https://i.ibb.co/Mp8PNbc/Banner-Image-2.png",
+        "description": "The level of security provided by CypherPlay is unmatched. I feel confident using my card for both everyday purchases and travel. It's the peace of mind I was looking for."
+    },
+    {
+        "_id": "02",
+        "type": "Apartment",
+        "read": "Ready to Move",
+        "title": "SunnySlope Suites",
+        "location": "Meadowshire Park, Greenfield, USA",
+        "price": "250000",
+        "img": "https://i.ibb.co/vjsNy3B/Banner-Image-1.png",
+        "description": "The level of security provided by CypherPlay is unmatched. I feel confident using my card for both everyday purchases and travel. It's the peace of mind I was looking for."
+    },
+    {
+        "_id": "01",
+        "type": "Apartment",
+        "read": "Ready to Move",
+        "title": "SunnySlope Suites",
+        "location": "Meadowshire Park, Greenfield, USA",
+        "price": "250000",
+        "img": "https://i.ibb.co/hVgdZJm/ai-generated-modern-styled-entryway-23-2150692393.jpg",
+        "description": "The level of security provided by CypherPlay is unmatched. I feel confident using my card for both everyday purchases and travel. It's the peace of mind I was looking for."
+    }
+    
+    
+]

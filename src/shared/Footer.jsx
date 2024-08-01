@@ -4,7 +4,7 @@ import { logo } from "../assets/images";
 const Footer = () => {
     return (
         <div>
-            <footer className="footer bg-bgColor text-base-content p-10">
+            <footer className="footer  bg-bgColor text-base-content p-10">
         <aside>
          <img src={logo} alt="" />
           <p >
@@ -13,6 +13,7 @@ const Footer = () => {
             create more happy in the world.
           </p>
         </aside>
+        
         <nav>
           <p className="footer-title lowercase text-[14px] font-bodyFont font-semibold">Product</p>
           <a className="link link-hover text-[#475467] font-bodyFont">Overview</a>
@@ -63,6 +64,7 @@ const Footer = () => {
           <a className="link link-hover text-[#475467] font-bodyFont">Contact</a>
           
         </nav>
+       
        
        
       </footer>

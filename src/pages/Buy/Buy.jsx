@@ -1,5 +1,6 @@
 import BuyBanner from "./BuyBanner";
 import CountUp from "./CountUp";
+import ListedProperty from "./ListedProperty";
 import PopularProperties from "./PopularProperties";
 import Testimonial from "./Testimonial";
 
@@ -12,6 +13,8 @@ const Buy = () => {
             <CountUp/>
             {/* Popular Properties  */}
             <PopularProperties/>
+            {/* listed property  */}
+            <ListedProperty/>
             {/* Testimonial  */}
             <Testimonial/>
         </div>

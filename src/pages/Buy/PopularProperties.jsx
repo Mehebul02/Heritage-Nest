@@ -4,25 +4,24 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { CiLocationOn } from "react-icons/ci";
 import { TfiGallery } from "react-icons/tfi";
-import { cardImage1 } from "../../assets/images";
-import PropertyCard from "./PropertyCard";
 
 const PopularProperties = () => {
   const swiperRef = useRef(null);
+  const [properties, setProperties] = useState([]);
 
-  const [propertise, setPropertis] = useState([]);
   useEffect(() => {
     fetch("property.json")
       .then((res) => res.json())
       .then((data) => {
-        setPropertis(data);
+        setProperties(data);
       });
   }, []);
-  console.log(propertise);
+
+
+
   return (
     <Container>
       <div className="my-10">
@@ -39,64 +38,76 @@ const PopularProperties = () => {
         <Swiper
           ref={swiperRef}
           watchSlidesProgress={true}
-          slidesPerView={3}
-          spaceBetween={30}
+          slidesPerView={1}
+          spaceBetween={20}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
           centeredSlides={true}
-          //   autoplay={{
-          //     delay: 2500,
-          //     disableOnInteraction: false,
-          //   }}
           pagination={{
             clickable: true,
           }}
+             autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
-          {propertise?.map((property) => (
+          {properties?.map((property) => (
             <SwiperSlide key={property.id}>
-
-
-<div className="card bg-base-100 w-96  shadow-xl my-10 flex flex-col">
-  <figure className="relative h-1/2">
-    <img src={property.img} alt="Shoes" className="w-full h-52 object-cover" />
-    <div className="absolute bottom-4 left-6 flex items-center gap-3 bg-[#FDF0E7] px-3 py-1 rounded-md text-xl font-bodyFont font-semibold">
-      <TfiGallery className="text-designColor" /> 20{" "}
-    </div>
-  </figure>
-  <div className="card-body flex flex-col justify-between h-1/2">
-    <div>
-      <div className="flex justify-between items-center">
-        <h2 className="text-[14px] text-primaryColor font-bodyFont bg-bgColor px-4 py-1 rounded-md">
-          {property.type}
-        </h2>
-        <div className="flex items-center gap-3">
-          <div className="w-2 h-2 bg-designColor"></div>
-          <h1 className="text-[16px] font-bodyFont">
-            {property.read}
-          </h1>
-        </div>
-      </div>
-      <div className="border my-2"></div>
-      <h1 className="text-[20px] text-darkText font-bodyFont font-semibold">
-        {property.title}
-      </h1>
-      <span className="label-text font-bodyFont flex items-center gap-2 my-2">
-        <CiLocationOn className="text-xl text-designColor" />{" "}
-        {property.location}
-      </span>
-    </div>
-    <h1 className="text-[24px] text-darkText font-bodyFont font-semibold mt-auto">
-      $ {property.price}
-    </h1>
-  </div>
-</div>
-
-        
+              <div className="card bg-base-100 w-full shadow-xl my-10 flex flex-col">
+                <figure className="relative h-52 md:h-64 lg:h-80">
+                  <img
+                    src={property.img}
+                    alt="Shoes"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute bottom-4 left-6 flex items-center gap-3 bg-[#FDF0E7] px-3 py-1 rounded-md text-xl font-bodyFont font-semibold">
+                    <TfiGallery className="text-designColor" /> 20{" "}
+                  </div>
+                </figure>
+                <div className="card-body flex flex-col justify-between flex-grow">
+                  <div>
+                    <div className="flex justify-between items-center">
+                      <h2 className="text-[14px] text-primaryColor font-bodyFont bg-bgColor px-4 py-1 rounded-md">
+                        {property.type}
+                      </h2>
+                      <div className="flex items-center gap-3">
+                        <div className="w-2 h-2 bg-designColor"></div>
+                        <h1 className="text-[16px] font-bodyFont">
+                          {property.read}
+                        </h1>
+                      </div>
+                    </div>
+                    <div className="border my-2"></div>
+                    <h1 className="text-[20px] text-darkText font-bodyFont font-semibold">
+                      {property.title}
+                    </h1>
+                    <span className="label-text font-bodyFont flex items-center gap-2 my-2">
+                      <CiLocationOn className="text-xl text-designColor" />{" "}
+                      {property.location}
+                    </span>
+                  </div>
+                  <h1 className="text-[24px] text-darkText font-bodyFont font-semibold mt-auto">
+                    $ {property.price}
+                  </h1>
+                </div>
+              </div>
             </SwiperSlide>
           ))}
-
-          
         </Swiper>
       </div>
     </Container>
