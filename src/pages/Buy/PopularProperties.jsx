@@ -25,7 +25,7 @@ const PopularProperties = () => {
 
   return (
     <Container>
-      <div className="my-10">
+      <div className="lg:my-10">
         <div className="flex flex-col lg:flex-row lg:space-x-80">
           <h1 className="text-3xl text-darkText font-bodyFont font-semibold">
             Popular Properties
