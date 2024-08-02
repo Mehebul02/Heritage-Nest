@@ -54,9 +54,9 @@ const Header = () => {
      <Link to='/'> <img src={logo} alt="logo" className="w-14 opacity-75 hover:opacity-100 duration-200 cursor-pointer"/></Link> 
        </div>
       {/* login */}
-     <div>
+     <Link to='/login'>
         <button className="text-[14px] text-primaryColor bg-primaryColor/20 w-[96px] h-[40px] rounded-[14px] font-bodyFont ">Sing in</button>
-    </div>
+    </Link>
                
         <div
           onClick={() => setShow(true)}

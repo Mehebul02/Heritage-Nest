@@ -8,6 +8,9 @@ import Home from "../pages/Home";
 import Buy from "../pages/Buy/Buy";
 import PropertyDetails from "../pages/property-details/PropertyDetails";
 import About from "../pages/About/About";
+import Login from "../pages/Login";
+import RegisterForm from "../pages/Register/RegisterForm";
+
 const router = createBrowserRouter([
     {
       path: "/",
@@ -28,6 +31,14 @@ const router = createBrowserRouter([
         {
           path:'/about',
           element:<About/>
+        },
+        {
+          path:'/login',
+          element:<Login/>
+        },
+        {
+          path:'/register',
+          element:<RegisterForm/>
         }
       ]
     },
