@@ -4,17 +4,17 @@ import { logo } from "../assets/images";
 const Footer = () => {
     return (
         <div>
-            <footer className="footer  bg-bgColor text-base-content p-10">
+            <footer className="grid grid-cols-2 lg:grid-cols-6 gap-x-4  bg-bgColor text-base-content p-16">
         <aside>
          <img src={logo} alt="" />
-          <p >
+          <p className="font-bodyFont">
           Design amazing digital experiences that 
-            <br />
+            
             create more happy in the world.
           </p>
         </aside>
         
-        <nav>
+        <nav className="flex flex-col gap-3">
           <p className="footer-title lowercase text-[14px] font-bodyFont font-semibold">Product</p>
           <a className="link link-hover text-[#475467] font-bodyFont">Overview</a>
           <a className="link link-hover text-[#475467] font-bodyFont">Features</a>
@@ -24,7 +24,7 @@ const Footer = () => {
           <a className="link link-hover text-[#475467] font-bodyFont">Releases</a>
           
         </nav>
-        <nav>
+        <nav className="flex flex-col gap-3">
           <p className="footer-title lowercase text-[14px] font-bodyFont font-semibold">Company</p>
           <a className="link link-hover text-[#475467] font-bodyFont">About Us</a>
           <a className="link link-hover text-[#475467] font-bodyFont">Careers</a>
@@ -34,7 +34,7 @@ const Footer = () => {
           <a className="link link-hover text-[#475467] font-bodyFont">Contact</a>
           
         </nav>
-        <nav>
+        <nav className="flex flex-col gap-3">
           <p className="footer-title lowercase text-[14px] font-bodyFont font-semibold">Resources</p>
           <a className="link link-hover text-[#475467] font-bodyFont">Blog</a>
           <a className="link link-hover text-[#475467] font-bodyFont">Newsletter</a>
@@ -44,7 +44,7 @@ const Footer = () => {
           <a className="link link-hover text-[#475467] font-bodyFont">Support</a>
           
         </nav>
-        <nav>
+        <nav className="flex flex-col gap-3">
           <p className="footer-title lowercase text-[14px] font-bodyFont font-semibold">Social</p>
           <a className="link link-hover text-[#475467] font-bodyFont">Twitter</a>
           <a className="link link-hover text-[#475467] font-bodyFont">Linkedin</a>
@@ -54,7 +54,7 @@ const Footer = () => {
           <a className="link link-hover text-[#475467] font-bodyFont">Dribble</a>
           
         </nav>
-        <nav>
+        <nav className="flex flex-col gap-3">
           <p className="footer-title lowercase text-[14px] font-bodyFont font-semibold">Legal</p>
           <a className="link link-hover text-[#475467] font-bodyFont">Terms</a>
           <a className="link link-hover text-[#475467] font-bodyFont">Privacy</a>

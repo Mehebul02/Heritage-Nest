@@ -55,7 +55,7 @@ const Header = () => {
        </div>
       {/* login */}
      <div>
-        <button className="text-[14px] text-primaryColor bg-primaryColor/20 px-4 py-2 rounded-[14px] font-bodyFont ">Sing in</button>
+        <button className="text-[14px] text-primaryColor bg-primaryColor/20 w-[96px] h-[40px] rounded-[14px] font-bodyFont ">Sing in</button>
     </div>
                
         <div
