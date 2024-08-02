@@ -1,6 +1,6 @@
 # Heritage Nest
 
-A brief description of your project. It can be a tool, library, or application that performs a specific function.
+This project is a real estate platform designed to facilitate buying and renting properties. Users can browse listings, view detailed property information, and manage their transactions efficiently.
 
 ## Installation
 
