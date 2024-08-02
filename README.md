@@ -1,8 +1,27 @@
-# React + Vite
+# Heritage Nest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A brief description of your project. It can be a tool, library, or application that performs a specific function.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To set up the project, follow these steps:
+
+1. Ensure you have Node.js installed on your system. Download it from [Node.js](https://nodejs.org/).
+2. Clone the project repository:
+    ```bash
+    git clone https://github.com/Mehebul02/Heritage-Nest.git
+    ```
+3. Navigate to the project directory:
+    ```bash
+    cd Heritage-Nest
+    ```
+4. Install the required packages:
+    ```bash
+    npm install
+    ```
+
+## Usage
+
+To start the development server, use the following command:
+```bash
+npm run dev

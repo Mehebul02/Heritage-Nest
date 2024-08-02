@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { logo } from "../assets/images";
 import SocialLInks from "../component/SocialLInks";
 const navigation = [
-  { title: "Buyer", link: "buy",},
+  { title: "Buy", link: "buy",},
   { title: "Sell", link: "#", },
   { title: "Services", link: "#",  },
   { title: "About", link: "about",  }

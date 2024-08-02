@@ -12,10 +12,10 @@ const RegisterForm = () => {
         
       >
        
-        <div className="w-1/2   hidden lg:block  bg-no-repeat  lg:w-1/2  rounded-l-lg ">
+        <div className="w-1/2     bg-no-repeat  lg:w-1/2  rounded-l-lg ">
           <img src={register} alt="register" />
         </div>
-        <div className="w-1/2  p-10 rounded-md ">
+        <div className="  p-10 rounded-md ">
           <h1 className="text-3xl text-primaryColor font-poppins font-semibold ">
             Sign up to Heritage Nest.
           </h1>
